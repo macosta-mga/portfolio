@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe and Inventory Tracker | Mikayla Acosta</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top">Mikayla Acosta Portfolio</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="case-study-page">
+      <section class="case-hero" id="overview">
+        <img
+          class="case-hero-image"
+          src="../assets/coffee-inventory-cover.png"
+          alt="Coffee company inventory tracker project cover"
+        />
+        <p class="eyebrow">Web App</p>
+        <h1>Recipe and Inventory Tracker</h1>
+      </section>
+
+      <section class="case-meta" aria-label="Project details">
+        <div>
+          <p class="case-label">Context</p>
+          <p>
+            This project creates an inventory and recipe tracker for a local coffee shop to
+            streamline and organize their internal system.
+          </p>
+        </div>
+        <div>
+          <p class="case-label">Role</p>
+          <p>Frontend Design, Web Development</p>
+        </div>
+        <div>
+          <p class="case-label">Duration</p>
+          <p>Janurary 2025 to May 2025</p>
+        </div>
+        <div>
+          <p class="case-label">Team</p>
+          <p>
+            Nirali Shah, Garima Upadhyay, Anirra Kutty, Brittney Chan, Caden Lewis, Divij Muthu,
+            Juyeon Ma, Priya Venkatesan, Zoey Yang
+          </p>
+        </div>
+        <div>
+          <p class="case-label">Tools</p>
+          <p>Figma, HTML, CSS, JavaScript</p>
+        </div>
+      </section>
+
+      <section class="case-slide split-slide text-left">
+        <div class="slide-copy">
+          <p class="eyebrow">Background</p>
+          <h2>1951 Coffee Company</h2>
+          <p>
+            1951 Coffee Company is a nonprofit cafe in Berkeley that supports refugees by providing
+            free barista training, work experience, and job placement opportunities. Their mission
+            is to help people rebuild stable lives through employment while also creating a
+            community space that raises awareness about refugee experiences.
+          </p>
+        </div>
+        <figure class="media-frame slide-media">
+          <img src="../assets/1951-coffee-company-sign.png" alt="1951 Coffee Company sign outside the cafe" />
+        </figure>
+      </section>
+
+      <section class="case-section project-overview-section matched-section-label">
+        <p class="eyebrow">Project Overview</p>
+        <h2>A cleaner way to track recipes, supplies, and inventory needs.</h2>
+        <p>
+          Built an inventory and recipe tracking system that manages ingredient quantities, links
+          them to recipes, and alerts the team when restocking is needed, with Amazon data
+          integration and a MongoDB backend. I focused on the frontend, creating interfaces to add
+          and edit recipes and ingredients.
+        </p>
+      </section>
+
+      <section class="case-section matched-section-label">
+        <p class="eyebrow">Initial Brainstorming</p>
+        <h2>Lofi Prototypes</h2>
+        <p>
+          These are some of the very beginning lofi designs during our brainstorming sessions. This
+          platform is for internal use only so the priority design wise was to make everything look
+          simple, clean, and easy to digest. We played around with 1951 Coffee's website design
+          layout and our own creative ideas.
+        </p>
+        <div class="media-row lofi-prototype-row">
+          <figure class="prototype-figure">
+            <img src="../assets/1951-lofi-prototype-1.png" alt="Early low-fidelity recipe browsing prototype" />
+          </figure>
+          <figure class="prototype-figure">
+            <img src="../assets/1951-lofi-prototype-2.png" alt="Early low-fidelity inventory browsing prototype" />
+          </figure>
+          <figure class="prototype-figure">
+            <img src="../assets/1951-lofi-prototype-3.png" alt="Early low-fidelity home page prototype" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section prototype-flow-section matched-section-label">
+        <div class="prototype-flow-top">
+          <div class="prototype-flow-copy">
+            <p class="eyebrow">Prototype Flow</p>
+            <h2>Viewing Recipes, Editing Recipes, Add New Ingredients, Add New Recipe</h2>
+            <p>
+              These are the general flows of how our Recipe and Ingredient tracker turned out. We
+              included multiple drop down menus to streamline ingredients and measurment metrics.
+            </p>
+          </div>
+          <figure class="prototype-video-figure prototype-video-feature">
+            <video controls playsinline preload="metadata">
+              <source src="../assets/1951-prototype-flow-1.mov" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+        <div class="media-row prototype-flow-row">
+          <figure class="prototype-video-figure">
+            <video controls playsinline preload="metadata">
+              <source src="../assets/1951-prototype-flow-2.mov" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+          <figure class="prototype-video-figure">
+            <video controls playsinline preload="metadata">
+              <source src="../assets/1951-prototype-flow-3.mov" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-section matched-section-label">
+        <p class="eyebrow">Notification and Backend</p>
+        <h2>Alerting, Data Scraping, Database</h2>
+        <ul class="case-bullets">
+          <li>
+            <strong>Data Scraping Team:</strong> Collected ingredient data from Amazon (like names,
+            prices, and availability) and structured it so it could be used in the system for
+            tracking and restocking decisions.
+          </li>
+          <li>
+            <strong>Database Team (MongoDB):</strong> Built and managed the backend database,
+            organizing recipes and ingredients, linking them together, and ensuring all data
+            (quantities, updates, new items) was stored and retrieved efficiently.
+          </li>
+          <li>
+            <strong>Alerting Team:</strong> Developed the notification system that automatically
+            alerts workers when ingredients are low or need restocking, helping the team stay on
+            top of inventory in real time.
+          </li>
+        </ul>
+      </section>
+
+      <section class="case-slide split-slide text-left">
+        <div class="slide-copy">
+          <p class="eyebrow">Final Product</p>
+          <h2>Bringing Prototype to Life</h2>
+          <p>
+            I designed and built the recipe and ingredient pages, creating interactive interfaces
+            that allow users to add, edit, and manage recipes and ingredients. I used JavaScript to
+            handle dynamic updates and user interactions, and CSS to create a clean, intuitive, and
+            user-friendly layout.
+          </p>
+        </div>
+        <figure class="media-frame slide-media">
+          <img src="../assets/1951-final-product.png" alt="Final recipe and ingredient tracking interface" />
+        </figure>
+      </section>
+
+      <a class="back-link" href="../index.html#work">Back to projects</a>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
