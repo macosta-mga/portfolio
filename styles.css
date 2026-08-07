@@ -1035,6 +1035,52 @@ h3 {
   max-width: 60rem;
 }
 
+.bac-grid {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.bac-grid article {
+  background: #f7f5ef;
+  border: 1px solid rgba(16, 20, 24, 0.08);
+  border-radius: 22px;
+  padding: clamp(20px, 2.6vw, 30px);
+}
+
+.bac-grid h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.14;
+  margin: 0 0 10px;
+}
+
+.bac-grid p {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 0;
+  max-width: none;
+}
+
+.bac-gallery {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+  margin-top: clamp(18px, 2.6vw, 28px);
+}
+
+.bac-gallery.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.bac-gallery.three-up {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.bac-gallery .media-frame img {
+  box-shadow: 0 18px 46px rgba(16, 20, 24, 0.08);
+}
+
 .initial-takeaways-section {
   align-content: center;
   min-height: min(760px, calc(100vh - 88px));
@@ -1799,6 +1845,9 @@ h3 {
   .redo-insight-grid,
   .redo-opportunity-grid,
   .redo-feature-grid,
+  .bac-grid,
+  .bac-gallery.two-up,
+  .bac-gallery.three-up,
   .redo-gallery.two-up,
   .prototype-flow-top,
   .solution-grid,
