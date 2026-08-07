@@ -1528,67 +1528,6 @@ h3 {
   width: 100%;
 }
 
-.inline-video-shell {
-  position: relative;
-}
-
-.inline-video-fallback {
-  align-items: center;
-  background: #f8f8f5;
-  border-radius: inherit;
-  display: grid;
-  gap: 0;
-  overflow: hidden;
-}
-
-.inline-video-fallback img {
-  display: block;
-  width: 100%;
-}
-
-.inline-video-fallback-copy {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  justify-content: space-between;
-  padding: 18px 20px 20px;
-}
-
-.inline-video-fallback-copy p {
-  color: var(--ink);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.button-link {
-  background: var(--ink);
-  border-radius: 999px;
-  color: #fff;
-  display: inline-flex;
-  font-size: 0.98rem;
-  font-weight: 700;
-  gap: 8px;
-  padding: 0.85rem 1.25rem;
-  text-decoration: none;
-  transition: transform 180ms ease, background 180ms ease;
-}
-
-.button-link:hover,
-.button-link:focus-visible {
-  background: #2a3237;
-  transform: translateY(-1px);
-}
-
-.inline-video-shell.has-video-fallback video {
-  display: none;
-}
-
-.inline-video-shell.has-video-fallback .inline-video-fallback[hidden] {
-  display: grid;
-}
-
 .prototype-flow-top {
   align-items: start;
   display: grid;
