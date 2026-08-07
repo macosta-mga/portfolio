@@ -340,8 +340,12 @@
             </p>
           </article>
         </div>
-        <figure class="media-frame demo-video-frame prototype-video-figure">
+        <figure
+          class="media-frame demo-video-frame prototype-video-figure inline-video-shell"
+          data-inline-video-shell
+        >
           <video
+            data-inline-video
             controls
             playsinline
             preload="metadata"
@@ -350,6 +354,18 @@
           >
             Your browser does not support the demo video.
           </video>
+          <div class="inline-video-fallback" data-inline-video-fallback hidden>
+            <img
+              src="../assets/bac-final-landing.png"
+              alt="Preview image for the Berkeley Art Center demo flow."
+            />
+            <div class="inline-video-fallback-copy">
+              <p>This browser is not rendering the demo inline.</p>
+              <a class="button-link" href="../assets/bac-demo-flow.mov" target="_blank" rel="noreferrer">
+                Open the demo video
+              </a>
+            </div>
+          </div>
         </figure>
         <p class="redo-caption">
           This walkthrough shows the intended live flow: entering through the artist directory,
