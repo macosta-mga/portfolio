@@ -1,6 +1,7 @@
 const header = document.querySelector("[data-header]");
 const copyButtons = document.querySelectorAll("[data-copy-value]");
 const copyStatus = document.querySelector("[data-copy-status]");
+const projectCategories = document.querySelectorAll("[data-project-category]");
 const revealTargets = document.querySelectorAll(
   [
     "main > section",
@@ -11,6 +12,11 @@ const revealTargets = document.querySelectorAll(
     ".back-link",
   ].join(", ")
 );
+
+projectCategories.forEach((category) => {
+  const cards = category.querySelectorAll(".project-card");
+  category.hidden = cards.length === 0;
+});
 
 const updateHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 12);

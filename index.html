@@ -78,7 +78,7 @@
           </div>
 
           <div class="project-groups">
-            <section class="project-category" aria-labelledby="past-projects-title">
+            <section class="project-category" data-project-category aria-labelledby="past-projects-title">
               <h3 class="category-title" id="past-projects-title">Past Projects</h3>
               <div class="project-grid">
                 <a class="project-card" href="projects/notability.html" aria-label="Open Notability project page">
@@ -163,12 +163,7 @@
                     </span>
                   </span>
                 </a>
-              </div>
-            </section>
 
-            <section class="project-category" aria-labelledby="current-projects-title">
-              <h3 class="category-title" id="current-projects-title">Current Projects</h3>
-              <div class="project-grid current-project-grid">
                 <a class="project-card" href="projects/study-sprint.html" aria-label="Open Referral Rewards System project page">
                   <span class="project-card-inner">
                     <span class="project-face project-front">
@@ -228,6 +223,11 @@
                   </span>
                 </a>
               </div>
+            </section>
+
+            <section class="project-category" data-project-category hidden aria-labelledby="current-projects-title">
+              <h3 class="category-title" id="current-projects-title">Current Projects</h3>
+              <div class="project-grid current-project-grid"></div>
             </section>
           </div>
         </div>
