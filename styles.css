@@ -950,6 +950,91 @@ h3 {
   width: 100%;
 }
 
+.redo-method-grid,
+.redo-insight-grid,
+.redo-opportunity-grid,
+.redo-feature-grid,
+.redo-summary-grid {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.redo-opportunity-grid,
+.redo-feature-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.redo-summary-grid {
+  align-self: stretch;
+  grid-template-columns: 1fr;
+  margin-top: 0;
+}
+
+.redo-method-grid article,
+.redo-insight-grid article,
+.redo-opportunity-grid article,
+.redo-feature-grid article,
+.redo-summary-grid article {
+  background: #f5f7ff;
+  border: 1px solid rgba(16, 20, 24, 0.08);
+  border-radius: 22px;
+  padding: clamp(20px, 2.6vw, 30px);
+}
+
+.redo-method-grid h3,
+.redo-insight-grid h3,
+.redo-opportunity-grid h3,
+.redo-feature-grid h3,
+.redo-summary-grid h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+  line-height: 1.14;
+  margin: 0 0 10px;
+}
+
+.redo-method-grid p,
+.redo-insight-grid p,
+.redo-opportunity-grid p,
+.redo-feature-grid p,
+.redo-summary-grid p {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 0;
+  max-width: none;
+}
+
+.wide-redo-media {
+  margin-top: clamp(26px, 4vw, 40px);
+}
+
+.wide-redo-media img {
+  box-shadow: 0 18px 46px rgba(16, 20, 24, 0.08);
+}
+
+.redo-gallery {
+  display: grid;
+  gap: clamp(18px, 2.4vw, 28px);
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.redo-gallery.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.redo-gallery .media-frame img {
+  box-shadow: 0 18px 46px rgba(16, 20, 24, 0.08);
+}
+
+.redo-caption {
+  color: var(--ink);
+  font-size: clamp(1rem, 1.45vw, 1.08rem);
+  line-height: 1.55;
+  margin: clamp(18px, 2.5vw, 30px) 0 0;
+  max-width: 60rem;
+}
+
 .initial-takeaways-section {
   align-content: center;
   min-height: min(760px, calc(100vh - 88px));
@@ -1710,6 +1795,11 @@ h3 {
   .method-grid,
   .why-grid,
   .approach-timeline,
+  .redo-method-grid,
+  .redo-insight-grid,
+  .redo-opportunity-grid,
+  .redo-feature-grid,
+  .redo-gallery.two-up,
   .prototype-flow-top,
   .solution-grid,
   .media-row,
