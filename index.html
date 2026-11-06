@@ -10,8 +10,9 @@
     />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
-  <body>
+  <body class="editorial-home">
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="Mikayla Acosta Portfolio home">Mikayla Acosta Portfolio</a>
       <nav class="nav-links" aria-label="Primary navigation">
@@ -23,50 +24,56 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-image"
-          src="assets/home-golden-gate-hero.png"
-          alt="Golden Gate Bridge over the water at sunset"
-        />
-        <div class="hero-scrim"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Product, Design, And Developer</p>
-          <h1 id="hero-title">Mikayla Acosta</h1>
-          <p class="hero-copy">
-            Passionate about how technology can work for people-combining data, human-centered
-            design, and collaboration to shape intuitive, end-to-end products.
-          </p>
-          <div class="hero-actions" aria-label="Portfolio actions">
-            <a class="button primary" href="#work">View work</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
+      <div class="editorial-spreads">
+        <section class="editorial-spread editorial-spread--banner" aria-label="Image collage">
+          <div class="editorial-mosaic">
+            <div class="editorial-banner-tile">
+              <img src="assets/banner-citrus.jpg" alt="" />
+              <span>Thinker</span>
+            </div>
+            <div class="editorial-banner-tile">
+              <img src="assets/banner-persimmons.jpg" alt="" />
+              <span>Designer</span>
+            </div>
+            <div class="editorial-banner-tile">
+              <img class="banner-image-bottom" src="assets/banner-doer-sunset.png" alt="" />
+              <span>Doer</span>
+            </div>
+            <div class="editorial-banner-tile">
+              <img src="assets/banner-lychee.jpg" alt="" />
+              <span>Maker</span>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="section-inner about-grid">
-          <img
-            src="assets/about-mikayla.jpeg"
-            alt="Mikayla Acosta outdoors in front of mountains"
-          />
-          <div>
-            <p class="eyebrow">About Me</p>
-            <h2 id="about-title">Thinker, Designer, Doer</h2>
-            <p>
-              I am a Data Science and Economics student at UC Berkeley, interested in how technology
-              can be shaped into products people actually use and trust. I enjoy breaking down complex
-              ideas, thinking through user flows, and creating clear, intuitive experiences, especially
-              at the intersection of product, design, and data.
-            </p>
-            <p>
-              Outside the finished project, I care about the process: asking better questions,
-              testing assumptions, and learning enough from each version to make the next one
-              stronger.
-            </p>
+        <section class="editorial-spread editorial-spread--notes" id="about" aria-labelledby="notes-template-title">
+          <div class="editorial-spread-lead">
+            <div class="editorial-nameplate">
+              <h1 id="notes-template-title">Mikayla <em>Acosta</em></h1>
+              <p>PRODUCT, DESIGN, AND DEVELOP</p>
+            </div>
+            <img class="editorial-image editorial-image--arch" src="assets/home-portrait-lemon.jpg" alt="Mikayla Acosta holding a lemon slice" />
           </div>
-        </div>
-      </section>
+          <div class="editorial-notes">
+            <p>
+              I&rsquo;m a Data Science and Economics student at UC Berkeley, passionate about shaping
+              technology into products people actually use and trust. I enjoy breaking down complex
+              ideas, understanding user needs, and combining data, human-centered design, and
+              collaboration to create intuitive, end-to-end experiences.
+            </p>
+            <p>
+              Beyond the final product, I&rsquo;m drawn to the process of asking better questions,
+              challenging assumptions, and refining ideas through iteration. I believe the best
+              products come from understanding people, making thoughtful decisions, and continuously
+              learning along the way.
+            </p>
+            <div class="hero-actions" role="group" aria-label="Portfolio actions">
+              <a class="button primary" href="#work">View work</a>
+              <a class="button secondary" href="#contact">Get in touch</a>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section class="section" id="work" aria-labelledby="work-title">
         <div class="section-inner">
@@ -81,6 +88,65 @@
             <section class="project-category" data-project-category aria-labelledby="past-projects-title">
               <h3 class="category-title" id="past-projects-title">Past Projects</h3>
               <div class="project-grid">
+                <a class="project-card" href="projects/study-sprint.html" aria-label="Open Referral Rewards System project page">
+                  <span class="project-card-inner">
+                    <span class="project-face project-front">
+                      <img
+                        class="redo-card-image"
+                        src="assets/redo-spc-cover.png"
+                        alt="SPC x Redo project cover"
+                      />
+                      <span class="project-body">
+                        <span class="project-type">Research, Web Dev</span>
+                        <span class="project-title">Referral Rewards System</span>
+                        <span class="project-summary">
+                          End-to-end product case study for Redo, from merchant insights to full
+                          working product and marketing site.
+                        </span>
+                      </span>
+                    </span>
+                    <span class="project-face project-back">
+                      <span class="project-type">Overview</span>
+                      <span class="project-title">Referral Rewards System</span>
+                      <span class="project-summary">
+                        A product story that connects merchant research, prototype design, and a
+                        marketing site into one clear feature launch direction.
+                      </span>
+                      <span class="project-hint">Click to read the full case study</span>
+                    </span>
+                  </span>
+                </a>
+
+                <a class="project-card" href="projects/community-archive.html" aria-label="Open Artist Cards and Bulletin Board project page">
+                  <span class="project-card-inner">
+                    <span class="project-face project-front">
+                      <img
+                        class="berkeley-card-image"
+                        src="assets/berkeley-art-center-cover.png"
+                        alt="CFG and Berkeley Art Center project cover"
+                      />
+                      <span class="project-body">
+                        <span class="project-type">Web Dev, Backend</span>
+                        <span class="project-title">Artist Cards and Bulletin Board</span>
+                        <span class="project-summary">
+                          Creating an Artist Profile page for artists that have memberships at
+                          Berkeley Art Center, and a bulletin board style page where people can post
+                          events and highlight artwork.
+                        </span>
+                      </span>
+                    </span>
+                    <span class="project-face project-back">
+                      <span class="project-type">Overview</span>
+                      <span class="project-title">Artist Cards and Bulletin Board</span>
+                      <span class="project-summary">
+                        A web development project for artist profiles, event posts, and featured
+                        artwork within a community arts platform.
+                      </span>
+                      <span class="project-hint">Click to read the full case study</span>
+                    </span>
+                  </span>
+                </a>
+
                 <a class="project-card" href="projects/notability.html" aria-label="Open Notability project page">
                   <span class="project-card-inner">
                     <span class="project-face project-front">
@@ -158,65 +224,6 @@
                       <span class="project-summary">
                         Built to keep recipes, supplies, and inventory needs easier to track in one
                         organized system.
-                      </span>
-                      <span class="project-hint">Click to read the full case study</span>
-                    </span>
-                  </span>
-                </a>
-
-                <a class="project-card" href="projects/study-sprint.html" aria-label="Open Referral Rewards System project page">
-                  <span class="project-card-inner">
-                    <span class="project-face project-front">
-                      <img
-                        class="redo-card-image"
-                        src="assets/redo-spc-cover.png"
-                        alt="SPC x Redo project cover"
-                      />
-                      <span class="project-body">
-                        <span class="project-type">Research, Web Dev</span>
-                        <span class="project-title">Referral Rewards System</span>
-                        <span class="project-summary">
-                          End-to-end product case study for Redo, from merchant insights to full
-                          working product and marketing site.
-                        </span>
-                      </span>
-                    </span>
-                    <span class="project-face project-back">
-                      <span class="project-type">Overview</span>
-                      <span class="project-title">Referral Rewards System</span>
-                      <span class="project-summary">
-                        A product story that connects merchant research, prototype design, and a
-                        marketing site into one clear feature launch direction.
-                      </span>
-                      <span class="project-hint">Click to read the full case study</span>
-                    </span>
-                  </span>
-                </a>
-
-                <a class="project-card" href="projects/community-archive.html" aria-label="Open Artist Cards and Bulletin Board project page">
-                  <span class="project-card-inner">
-                    <span class="project-face project-front">
-                      <img
-                        class="berkeley-card-image"
-                        src="assets/berkeley-art-center-cover.png"
-                        alt="CFG and Berkeley Art Center project cover"
-                      />
-                      <span class="project-body">
-                        <span class="project-type">Web Dev, Backend</span>
-                        <span class="project-title">Artist Cards and Bulletin Board</span>
-                        <span class="project-summary">
-                          Creating an Artist Profile page for artists that have memberships at
-                          Berkeley Art Center, and a bulletin board style page where people can post
-                          events and highlight artwork.
-                        </span>
-                      </span>
-                    </span>
-                    <span class="project-face project-back">
-                      <span class="project-type">Overview</span>
-                      <span class="project-title">Artist Cards and Bulletin Board</span>
-                      <span class="project-summary">
-                        A web development project for artist profiles, event posts, and featured
-                        artwork within a community arts platform.
                       </span>
                       <span class="project-hint">Click to read the full case study</span>
                     </span>
