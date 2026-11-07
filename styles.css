@@ -1364,6 +1364,12 @@ h3 {
   width: 100%;
 }
 
+@media (width > 860px) {
+  .asus-background-media {
+    transform: translateY(24px);
+  }
+}
+
 .narrow-media {
   max-width: 720px;
 }
